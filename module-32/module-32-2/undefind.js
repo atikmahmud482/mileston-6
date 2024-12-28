@@ -1,4 +1,14 @@
 // 8 ways to undefine
+/* 
+no.1 variable that is not initialized will give undefined
+no.2 function with no return
+no.3 Parameter that is not passed will be undefined.
+no.4 If return has nothing on the right side will return undefined
+no.5 Property that does not exists on an object will give you undefined
+no.6 Accessing array element outside of the index range
+no.7 Deleting an element inside an array
+No.8 Set a value to directly to undefined
+*/
 //no.1 variable that is not initialized will give undefined
 let first;
 // console.log(first)
