@@ -12,3 +12,4 @@ if (first === second) {
 else {
     console.log('not equal')
 }
+//@ts-check
