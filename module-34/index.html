@@ -12,15 +12,15 @@
 
 <body>
     <!-- header start -->
-    <header>
+    <header class="">
         <div class="navbar bg-base-100">
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl">Hot Gadgets</a>
             </div>
             <div class="flex-none gap-2">
-                <div class="form-control">
+                <!-- <div class="form-control">
                     <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                </div>
+                </div> -->
                 <div class="dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
@@ -43,27 +43,34 @@
             </div>
         </div>
     </header>
-    <!-- Hero end -->
-    <div class="hero">
-        <div class="hero-content text-center">
-            <div class="">
-                <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
-                <p class="py-6">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humou.
-                </p>
-                <button class="btn btn-primary">Buy Now</button>
+
+    <main class="container mx-auto mt-8">
+        <!-- search section start -->
+        <section class="bg-gray-100 p-4 m-4">
+            <input id="search-field" type="text" placeholder="Search here"
+                class="input input-bordered input-accent w-full max-w-xs" />
+            <button onclick="handelSearch()" class="btn btn-accent">Search</button>
+        </section>
+        <!-- search section end -->
+        <!-- Hero end -->
+        <!-- <div class="">
+            <div class="hero-content text-center">
+                <div class="">
+                    <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+                    <p class="py-6">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humou.
+                    </p>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
             </div>
+        </div> -->
+        <!-- Hero end -->
+
+        <!-- card start -->
+        <div id="phone-container" class=" mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         </div>
-    </div>
-    <!-- Hero end -->
-
-    <!-- card start -->
-    <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-    </div>
-    <!-- card end -->
-    <main>
-
+        <!-- card end -->
 
     </main>
 
