@@ -56,7 +56,7 @@
             <button onclick="handelSearch2()" class="btn btn-accent">Search</button> -->
         </section>
         <!-- search section end -->
-        <!-- Hero end -->
+        <!-- Hero start -->
         <!-- <div class="">
             <div class="hero-content text-center">
                 <div class="">
@@ -70,6 +70,11 @@
             </div>
         </div> -->
         <!-- Hero end -->
+        <!-- Spinner of Loader start -->
+        <div id="loading-dot" class="text-center hidden">
+            <span class="loading loading-dots loading-lg"></span>
+        </div>
+        <!-- Spinner of Loader End -->
 
         <section>
             <!-- card start -->
@@ -77,12 +82,28 @@
             </div>
             <!-- card end -->
             <!-- show All button start -->
-            <div id="show-all-container" class="pt-4 pb-4 hidden">
-                <button class="btn btn-accent">Show All</button>
+            <div id="show-all-container" class="pt-4 pb-4 hidden text-center">
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
 
             <!-- show All button end -->
         </section>
+        <!-- Show details Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 id="phone-name" class="text-lg font-bold text-white">Hello!</h3>
+                <div id="show-detail-container">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
     </main>
 
